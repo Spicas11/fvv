@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# VARFVV: View-Adaptive Real-Time Interactive Free-View Video Streaming with Edge Computing (JSAC 2025)
 This is an academic paper project page template.
 
 
