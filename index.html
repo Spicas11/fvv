@@ -52,21 +52,20 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">VARFVV: View-Adaptive Real-Time Interactive Free-View Video Streaming with Edge Computing</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+              <span class="author-block"><a href="#" target="_blank">Qiang Hu</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Qihan He</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Houqiang Zhong</a>,</span>
+              <span class="author-block"><a href="#" target="_blank">Guo Lu</a>,</span>
+              <span class="author-block"><a href="#" target="_blank">Xiaoyun Zhang</a>,</span>
+              <span class="author-block"><a href="#" target="_blank">Guangtao Zhai</a>,</span>
+              <span class="author-block"><a href="#" target="_blank">Yanfeng Wang</a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Shanghai Jiao Tong University, ShanghaiTech University<br>IEEE Journal on Selected Areas in Communications (JSAC), 2025</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -148,7 +147,32 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            —Free-view video (FVV) allows users to explore
+            immersive video content from multiple views. However,
+            delivering FVV poses significant challenges due to the
+            uncertainty in view switching, combined with the substantial bandwidth and computational resources required
+            to transmit and decode multiple video streams, which
+            may result in frequent playback interruptions. Existing
+            approaches, either client-based or cloud-based, struggle
+            to meet high Quality of Experience (QoE) requirements
+            under limited bandwidth and computational resources. To
+            address these issues, we propose VARFVV, a bandwidthand computationally-efficient system that enables realtime interactive FVV streaming with high QoE and
+            low switching delay. Specifically, VARFVV introduces a
+            low-complexity FVV generation scheme that reassembles
+            multiview video frames at the edge server based on userselected view tracks, eliminating the need for transcoding and significantly reducing computational overhead.
+            This design makes it well-suited for large-scale, mobilebased UHD FVV experiences. Furthermore, we present
+            a popularity-adaptive bit allocation method, leveraging
+            a graph neural network, that predicts view popularity
+            and dynamically adjusts bit allocation to maximize QoE
+            within bandwidth constraints. We also construct an FVV
+            dataset comprising 330 videos from 10 scenes, including
+            basketball, opera, etc. Extensive experiments show that
+            VARFVV surpasses existing methods in video quality,
+            switching latency, computational efficiency, and bandwidth
+            usage, supporting over 500 users on a single edge server
+            with a switching delay of 71.5ms. Our code and dataset are
+            available at https://github.com/qianghu-huber/VARFVV.
+
           </p>
         </div>
       </div>
@@ -278,7 +302,16 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{hu2025varfvv,
+  title={VARFVV: View-Adaptive Real-Time Interactive Free-View Video Streaming with Edge Computing},
+  author={Hu, Qiang and He, Qihan and Zhong, Houqiang and Lu, Guo and Zhang, Xiaoyun and Zhai, Guangtao and Wang, Yanfeng},
+  journal={IEEE Journal on Selected Areas in Communications (JSAC)},
+  year={2025},
+  volume={TBD},
+  number={TBD},
+  pages={TBD},
+  doi={TBD}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
